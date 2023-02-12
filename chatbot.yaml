@@ -1,0 +1,20 @@
+name: echo-template
+
+entryPoint:
+  - main.sc
+
+botEngine: v2
+language: ru
+
+tests:
+  include:
+    - test.xml
+
+sts:
+  noMatchThreshold: 0.2
+
+caila:
+  noMatchThreshold: 0.2
+  
+injector:
+    api_key: API_KEY

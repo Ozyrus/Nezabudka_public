@@ -1,0 +1,234 @@
+{
+  "project" : {
+    "id" : "nezabudka-247961767-Rlz",
+    "name" : "nezabudka-247961767-Rlz",
+    "folder" : "/jaicp"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "UTC",
+    "extendedSettings" : {
+      "useShared" : false
+    },
+    "shared" : false
+  },
+  "intents" : [ {
+    "id" : 3627951,
+    "path" : "/будильник",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "давай поставим будильник"
+    }, {
+      "text" : "поставить будильник"
+    }, {
+      "text" : "звонок"
+    }, {
+      "text" : "заказать звонок"
+    }, {
+      "text" : "новый звонок"
+    }, {
+      "text" : "хочу заказать звонок"
+    } ],
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "id" : 3627952,
+    "path" : "/да",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "да"
+    }, {
+      "text" : "ага"
+    }, {
+      "text" : "угу"
+    }, {
+      "text" : "хорошо"
+    }, {
+      "text" : "давай"
+    }, {
+      "text" : "начнем"
+    } ],
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "id" : 3627953,
+    "path" : "/датаВремя",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "* @duckling.time *"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "date",
+      "entity" : "duckling.time",
+      "required" : true,
+      "prompts" : [ ],
+      "array" : false
+    } ],
+    "priority" : 0
+  }, {
+    "id" : 3627954,
+    "path" : "/умения",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "помощь"
+    }, {
+      "text" : "что ты умеешь?"
+    }, {
+      "text" : "с чем ты можешь помочь?"
+    }, {
+      "text" : "помоги"
+    }, {
+      "text" : "твои функции"
+    } ],
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "id" : 3627955,
+    "path" : "/цифра",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "* @duckling.number *"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "number",
+      "entity" : "duckling.number",
+      "required" : true,
+      "prompts" : [ ],
+      "array" : false
+    } ],
+    "priority" : 0
+  }, {
+    "id" : 3627956,
+    "path" : "/часовой пояс",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "установить часовой пояс"
+    }, {
+      "text" : "поменять часовой пояс"
+    }, {
+      "text" : "поменять время"
+    }, {
+      "text" : "установить время"
+    }, {
+      "text" : "местное время"
+    } ],
+    "patterns" : [ ],
+    "priority" : 0
+  } ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "spellerDictionary" : [ ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : false
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.email",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.url",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ]
+}
